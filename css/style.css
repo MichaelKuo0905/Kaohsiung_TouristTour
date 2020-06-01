@@ -50,7 +50,7 @@ table {
 .hero{
     margin:0 auto;
     height:380px;
-    width:100%;
+    max-width:100%;
     background-image:url(../img/Hero.png);
     background-size: cover;
     background-position: top center;
@@ -70,7 +70,7 @@ table {
         /*改變右邊箭頭樣式*/
         background: url(../img/icons_down.png) no-repeat right center transparent;
         border:0px;
-        width:300px;
+        max-width:300px;
         background-color:rgba(237,237,237,0.6);
         color:black;
         font-size: large;
@@ -143,7 +143,6 @@ table {
     width:100px;
     color:white;
 }
-
 
 
 .container{
@@ -219,6 +218,10 @@ table {
     color:white;
     padding-top:130px;
 }
+.NameandZone p{
+    font-size: small; 
+    padding-right: 30px;
+}
 ul li{
     padding-top:20px;
     padding-left:10px;
@@ -241,6 +244,84 @@ li img{
     width:200px;
     height:200px;
 }
+
+
+
+@media(max-width:768px){
+    .HotTourist{
+        max-width:600px;
+        max-height:80px;
+        max-height:100px;
+    }
+    .HotTourist h2{
+        font-size:15px;
+    }
+    .purple,.red,.blue,.yellow{
+        font-size:20px;
+        width:80px;
+    }
+
+    .dash{
+        width:600px;    
+    }
+    .containerlist{
+     width:100%;
+    }
+    .listitem{
+        z-index:-1;
+    }
+    .touristimg{
+        width:40%;
+        z-index:0;
+    }
+
+
+}
+    
+@media(max-width:375px){
+    .hero h1{
+        font-size:32px;
+
+    }
+    .optionlist{
+        font-size:small;
+    }
+    .HotTourist{
+        max-width:300px;
+        max-height:80px;
+        top:90px;
+    }
+    .HotTourist h2{
+        font-size:10px;
+    }
+    .purple,.red,.blue,.yellow{
+        font-size:5px;
+        width:50px;
+    }
+    .dash{
+        width:300px;
+        padding-top: 30px;
+    }
+    .containerlist{
+        display:block;
+        width:80%;
+       }
+       .listitem{
+           width:100%;
+           z-index:-1;
+       }
+       .touristimg{
+           width:80%;
+           z-index:0;
+       }
+       ul li{
+        font-size:5px;
+        padding-top:20px;
+        padding-left:10px;
+    }
+
+}
+
 .bottom{
     width:100%;
     height:90px;
