@@ -29,7 +29,7 @@ xhr.onload = function () {
             zonename.textContent=selectzone;
             for(var i=0;i<totallength;i++){
                 if(callback.result.records[i].Zone==selectzone){
-                   str+='<div class="listitem"><ul><img class=touristimg src="'+callback.result.records[i].Picture1+'" alt=""><div class="NameandZone"><p style="font-size:large; padding-left: 20px;">'+callback.result.records[i].Name+'</p><p style="font-size: small; padding-right: 30px;">'+callback.result.records[i].Zone+'</p></div>  <li> <img src="img/icons_clock.png">'+callback.result.records[i].Opentime+'</li><li><img src="img/icons_pin.png">'+callback.result.records[i].Add+'</li><div  class="bottomInfo"><li><img src="img/icons_phone.png">'+callback.result.records[i].Tel+'</li><li><img src="img/icons_tag.png" style="padding-right:5px;">歡迎參觀</li></div></ul></div>'  
+                   str+='<div class="listitem"><ul><img class=touristimg src="'+callback.result.records[i].Picture1+'" alt=""><div class="NameandZone"><p>'+callback.result.records[i].Name+'</p><p>'+callback.result.records[i].Zone+'</p></div>  <li> <img src="img/icons_clock.png">'+callback.result.records[i].Opentime+'</li><li><img src="img/icons_pin.png">'+callback.result.records[i].Add+'</li><div  class="bottomInfo"><li><img src="img/icons_phone.png">'+callback.result.records[i].Tel+'</li><li><img src="img/icons_tag.png" style="padding-right:5px;">歡迎參觀</li></div></ul></div>'  
                 }
 
             }
